@@ -1,6 +1,6 @@
 # K-th-Power-Expectile-Periodogram
 
-This work proposes the $k$-th power expectile periodogram (KEP) as a generalization of the quantile periodogram (QP) and expectile periodogram (EP) for time series analysis. By raising the check function to the $k$-th power, the KEP provides a flexible tool to balance robustness and efficiency. The KEP offers a more comprehensive understanding by examining the time series across the entire range of expectile levels at power $1<k\leq2$. Simulations demonstrate the capability of the proposed periodogram in detecting hidden periodicities, while maintaining robustness against outliers. We establish the asymptotic theory and investigate the relationship between the estimator and the so-called $k$-th power expectile spectrum (KES). Finally, we leverage the inherent two-dimensional property of the KEP, and train a convolution neural network (CNN) to classify the epileptic electroencephalogram (EEG) data, where the proposed estimator outperforms the ordinary periodogram.
+This paper introduces the k-th power expectile periodogram (KEP) as a generalization of the quantile periodogram (QP) and expectile periodogram (EP) for time series analysis. Constructed from trigonometric $k$-th power expectile regression (KER), the KEP provides a flexible tool to balance robustness and efficiency. The KEP retains the key properties of the ordinary periodogram as a frequency-domain representation of serial dependence in time series, while offering a more comprehensive understanding by examining the data across the entire range of expectile levels with power $1<k\leq2$. Simulations demonstrate the capability of the KEP in detecting hidden periodicities, while maintaining robustness against outliers. We establish the asymptotic theory and investigate the relationship between the KEP and the so-called $k$-th power expectile spectrum (KES). Finally, we leverage the inherent two-dimensional property of the KEP to train a convolutional neural network (CNN) to classify the epilepsy electroencephalogram (EEG) data, where the proposed estimator outperforms competitive estimators.
 
 One can download the code and data to reproduce the results in the paper uploaded.
 
@@ -8,7 +8,7 @@ Code:
 "fn.r" contains functions to compute the KEP.
 "eeg example.r" and "sp example.r" contains the code to reprodeuce the figures in Section 2.3.
 "kepsim.r" reproduces the results in the simulations.
-"train.py" train the CNN model in Section 5.
+
 
 Data:
 
